@@ -89,5 +89,5 @@ time g++ -std=c++17 fix_tags_for_noobs.cpp -o $executable_file
 printf "Complete.\n"
 
 printf 'A small suggestion, add the executable to your path. Add the following function to your .bashrc
-parse() { [[ -p /dev/stdin ]] && input=$(cat -) || input="$@"; [[ -z $input ]] && return 1; echo $input | fix_tags_for_noobs | column -t -s ',' ;}
+parse() { [[ -p /dev/stdin ]] && input=$(cat -) || input="$@"; [[ -z $input ]] && return 1; echo $input | fix_tags_for_noobs | column -t -s "," ;}
 Enjoy!'
